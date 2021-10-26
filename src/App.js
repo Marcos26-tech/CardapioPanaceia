@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import "./App.css";
+import Header from "./components/header/Header.jsx";
+import Footer from "./components/footer/Footer";
+import Routes from "./Routes";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header />
+      <Routes />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
