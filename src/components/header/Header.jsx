@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import Logo from "../../assets/img/logo.png";
-import Menu from "../../pages/menu/PageMenu";
+import Menu from "../menu/Menu";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
