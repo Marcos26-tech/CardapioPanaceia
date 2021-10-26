@@ -1,8 +1,11 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
+
+- npm install --save react-router-dom
+- npm install styled-components
+- npm install --save typewriter-effect
+- npm install react-icons --save styled
 
 In the project directory, you can run:
 
