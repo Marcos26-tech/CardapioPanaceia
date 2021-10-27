@@ -1,7 +1,7 @@
 import React from "react";
 import imgTacos from "../../assets/img/receita1.jpg";
 import CardContainer from "../../components/cardcontainer/CardContainer";
-import CardReceita from "../../components/cardcontainer/CardReceita";
+import CardHome from "../../components/cardcontainer/CardHome";
 import { DivHome, H, Span } from "../../assets/style/StyleGloblal";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         </H>
         <CardContainer>
           {receitas.map((receita) => (
-            <CardReceita
+            <CardHome
               foto={receita.foto}
               nome={receita.nome}
               receita={receita.receita}

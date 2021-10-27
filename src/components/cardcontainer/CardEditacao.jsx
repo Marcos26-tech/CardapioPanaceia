@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Modal from "./MostraModal"
 
 const Produto = styled.div`
   background-color: wheat;
@@ -18,13 +19,19 @@ const Produto = styled.div`
   }
 `;
 
-const CardReceita = (props) => {
+function showModal(Modal) {
+  Modal.showModal();
+}
+
+
+const CardEditar = (props) => {
   return (
     <Produto>
       <div>
         <img src={props.foto} alt={props.nome} />
         <span>{props.id}</span>
-        <button>Votar</button>
+        <button onClick={() => this.setState({showModal: true})}>Add Work Log</button>
+        <button onClick={showModal}>Editar</button>
         <h3>{props.nome}</h3>
         <p>
           <em>{props.calorias} kcal</em>
@@ -35,4 +42,4 @@ const CardReceita = (props) => {
   );
 };
 
-export default CardReceita;
+export default CardEditar;

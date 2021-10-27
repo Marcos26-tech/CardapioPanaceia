@@ -18,13 +18,11 @@ const Produto = styled.div`
   }
 `;
 
-const CardReceita = (props) => {
+const CardHome = (props) => {
   return (
     <Produto>
       <div>
         <img src={props.foto} alt={props.nome} />
-        <span>{props.id}</span>
-        <button>Votar</button>
         <h3>{props.nome}</h3>
         <p>
           <em>{props.calorias} kcal</em>
@@ -35,4 +33,4 @@ const CardReceita = (props) => {
   );
 };
 
-export default CardReceita;
+export default CardHome;

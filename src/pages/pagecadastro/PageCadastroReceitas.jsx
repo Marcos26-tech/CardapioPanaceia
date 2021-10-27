@@ -3,10 +3,9 @@ import {Container, Form, Dividir, Div2, Button} from "../../assets/style/StyleGl
 import gif from "../../assets/img/giphy.gif"
 
 function PageCadastroReceitas() {
-  let id = "";
+
 
   const [novaReceita, setReceita] = useState({
-    id: id,
     titulo: "",
     kcal: "",
     descricao: "",
@@ -14,12 +13,11 @@ function PageCadastroReceitas() {
 
   const adicionarReceita = (e) => {
     e.preventDefault();
+
   };
 
   const digitacao = (e) => {
-    setReceita({
-      ...novaReceita,[e.target.name]: e.target.value,
-    });
+    setReceita({...novaReceita,[e.target.name]: e.target.value,});
   };
   return (
     <Container>
@@ -56,7 +54,7 @@ function PageCadastroReceitas() {
             placeholder="Escreva a receita aqui..."
           />
         </Div2>
-        <Button type="submit">Criar Receitas</Button>
+        <Button type="submit">Criar Receita</Button>
       </Form>
     </Container>
   );

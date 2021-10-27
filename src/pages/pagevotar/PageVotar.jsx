@@ -11,6 +11,7 @@ function PageVotar() {
   const receitas = [
     {
       foto: imgTacos,
+      id: null,
       nome: "TACOS DE CARNE MOÍDA",
       receita:
         "INGREDIENTES: • 3/4 xícara de caldo de carne bovina • 1 1/2 colheres de amido de milho • 3 dentes de alho picados • 1/2 cebola pequena picada • 1 (4 onças) pode cortar chiles verdes",
@@ -42,10 +43,11 @@ function PageVotar() {
         <ReceitaContainer>
           {receitas.map((receita) => (
             <CardReceita
+              id={receita.id}
               foto={receita.foto}
               nome={receita.nome}
-              receita={receita.receita}
               calorias={receita.calorias}
+              receita={receita.receita}
             />
           ))}
         </ReceitaContainer>
