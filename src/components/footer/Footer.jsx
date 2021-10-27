@@ -5,6 +5,9 @@ const StyledFooter = styled.footer`
   text-align: center;
   background: linear-gradient(#000000, transparent);
   padding: 1px;
+  width: 100%; 
+  position: relative;
+  bottom:0;
   p {
     font-family: IM Fell English SC, serif;
     font-size: 15px;
@@ -21,7 +24,10 @@ const Footer = () => {
   return (
     <>
       <StyledFooter>
-        <p>Copyright &copy; Grupo Panace I.A Marcos Vinicius, Jonathan Felix, Vitótia Akemi e Marcos Maciel</p>
+        <p>
+          Copyright &copy; Grupo Panace I.A Marcos Vinicius, Jonathan Felix,
+          Vitótia Akemi, Marcos Maciel e Cristine Acocella
+        </p>
       </StyledFooter>
     </>
   );
