@@ -48,7 +48,7 @@ class Header extends Component {
                     .typeString("Panaceia")
                     .pauseFor(2000)
                     .deleteChars(10)
-                    .typeString("Panace IA")
+                    .typeString("Panaceia Delicious")
                     .start(2000);
                 }}
               />
